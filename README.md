@@ -1,5 +1,24 @@
-# Firebase Studio
+# ReCommerce AI Assist
 
-This is a NextJS starter in Firebase Studio.
+NextJS project scaffolded via [Firebase Studio](https://studio.firebase.google.com/).
 
-To get started, take a look at src/app/page.tsx.
+
+## Getting Started
+
+- [Install Node.js](https://nodejs.org/en/download/)
+- Install project dependencies with `npm install`
+- Rename `.env.example` to `.env` and update with your `GOOGLE/GEMINI` API key
+
+## Development flow
+
+- `npm run dev`
+
+## Production build
+
+- `npm run build`
+- `npm run start`
+
+## Unit tests
+
+- `npm run test`
+
