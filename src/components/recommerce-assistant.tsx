@@ -34,7 +34,7 @@ export default function RecommerceAssistant() {
     <Card className="shadow-2xl shadow-primary/10">
       <CardContent className="p-4 md:p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          <ProductForm isLoading={isLoading} onGenerate={handleGenerate} />
+          <ProductForm isLoading={isLoading} onGenerateAction={handleGenerate} />
           <SuggestionDisplay isLoading={isLoading} result={result} />
         </div>
       </CardContent>

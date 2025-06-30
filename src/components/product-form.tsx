@@ -13,10 +13,10 @@ import { ProductSchema, type ProductFormData } from '@/lib/types';
 
 interface ProductFormProps {
   isLoading: boolean;
-  onGenerate: (data: ProductFormData) => Promise<void>;
+  onGenerateAction: (data: ProductFormData) => Promise<void>;
 }
 
-export default function ProductForm({ isLoading, onGenerate }: ProductFormProps) {
+export default function ProductForm({ isLoading, onGenerateAction }: ProductFormProps) {
   const form = useForm<ProductFormData>({
     resolver: zodResolver(ProductSchema),
     defaultValues: {
@@ -37,7 +37,7 @@ export default function ProductForm({ isLoading, onGenerate }: ProductFormProps)
         <p className="text-muted-foreground">Fill in the form to get started.</p>
        </div>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onGenerate)} className="space-y-6">
+        <form onSubmit={form.handleSubmit(onGenerateAction)} className="space-y-6">
           <FormField
             control={form.control}
             name="productName"
