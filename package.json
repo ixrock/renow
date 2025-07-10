@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit --watch"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.13.0",
