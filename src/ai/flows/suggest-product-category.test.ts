@@ -1,7 +1,7 @@
 import { jest } from '@jest/globals';
 import { suggestProductCategory, SuggestProductCategoryInput } from './suggest-product-category';
 
-jest.mock('@/ai/genkit', () => ({
+jest.mock('@/ai/genkit-api', () => ({
   ai: {
     definePrompt: jest.fn().mockReturnValue(
       jest.fn().mockImplementation(async (input: unknown) => {

@@ -8,7 +8,7 @@
  * - SuggestProductCategoryOutput - The return type for the suggestProductCategory function.
  */
 
-import {ai} from '@/ai/genkit';
+import {ai} from '@/ai/genkit-api';
 import {z} from 'genkit';
 
 const SuggestProductCategoryInputSchema = z.object({

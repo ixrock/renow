@@ -9,7 +9,7 @@
  *   - GenerateMarketingTextOutput - The return type for the generateMarketingText function.
  */
 
-import {ai} from '@/ai/genkit';
+import {ai} from '@/ai/genkit-api';
 import {z} from 'genkit';
 
 const GenerateMarketingTextInputSchema = z.object({

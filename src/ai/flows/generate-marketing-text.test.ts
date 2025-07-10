@@ -1,7 +1,7 @@
 import { jest } from '@jest/globals';
 import { generateMarketingText, GenerateMarketingTextInput } from './generate-marketing-text';
 
-jest.mock('@/ai/genkit', () => ({
+jest.mock('@/ai/genkit-api', () => ({
   ai: {
     definePrompt: jest.fn().mockReturnValue(
       jest.fn().mockImplementation(async (input) => {

@@ -1,5 +1,6 @@
 "use client"
 
+// Notification system for React applications
 // Inspired by react-hot-toast library
 import * as React from "react"
 
